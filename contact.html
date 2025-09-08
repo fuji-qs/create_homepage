@@ -14,8 +14,8 @@
         <ul>
           <li><a href="index.html">profile</a></li>
           <li><a href="services.html">services</a></li>
-          <li><a href="#works">works</a></li>
-          <li><a href="#contact">contact</a></li>
+          <li><a href="works.html">works</a></li>
+          <li><a href="contact.html">contact</a></li>
         </ul>
       </nav>
     </div>
@@ -33,3 +33,30 @@
   </footer>
 </body>
 </html>
+
+
+<form id="contactForm">
+  <input type="text" name="name" placeholder="お名前" required>
+  <input type="email" name="email" placeholder="メールアドレス" required>
+  <textarea name="message" placeholder="お問い合わせ内容" required></textarea>
+  <button type="submit">送信</button>
+</form>
+
+<script>
+document.getElementById("contactForm").addEventListener("submit", async (e) => {
+  e.preventDefault();
+  const form = e.target;
+  const data = {
+    name: form.name.value,
+    email: form.email.value,
+    message: form.message.value,
+  };
+  await fetch("https://kyec73s3i3.execute-api.ap-northeast-1.amazonaws.com/prod/contact"
+  , {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(data),
+  }).then(res => res.json())
+    .then(data => alert(data.message));
+});
+</script>
