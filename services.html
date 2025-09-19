@@ -1,30 +1,136 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <title>fujimoffice</title>
-  <link rel="stylesheet" href="style.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>サービス | fujimoffice</title>
+  <meta name="description" content="家庭教師（高校数学・線形代数・微積分・統計・機械学習・Python・生成AI）と、公教育向けAI業務効率化システムの受託開発のご案内。" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="site-header">
-    <div class="header-top">
-      <h1>fujimoffice</h1>
-      <nav class="main-nav">
-        <ul>
-          <li><a href="index.html">profile</a></li>
-          <li><a href="services.html">services</a></li>
-          <li><a href="works.html">works</a></li>
-          <li><a href="contact.html">contact</a></li>
-        </ul>
-      </nav>
+    <header class="site">
+        <div class="container site-inner">
+          <a href="index.html" class="brand" aria-label="fujimoffice トップへ">
+            <div class="logo"></div><span>fujimoffice</span>
+          </a>
+          <nav aria-label="主要ナビゲーション">
+            <ul>
+              <li><a href="index.html">profile</a></li>
+              <li><a href="services.html">services</a></li>
+              <li><a href="works.html">works</a></li>
+              <li><a href="contact.html">contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>サービス</h1>
+      <p>学びと現場の両輪で支援します。個別指導の家庭教師と、公教育の業務をAIで効率化する受託開発をご提供します。</p>
+    </section>
+
+    <div class="grid">
+      <section id="tutor" class="card" aria-labelledby="tutor-title">
+        <div class="head">
+          <div class="eyebrow">Education <span class="pill">オンライン指導</span></div>
+          <h2 id="tutor-title">AI・データサイエンスの家庭教師</h2>
+          <p class="lead">座学、実装の両軸で、オーダーメイドのカリキュラムをご提供します</p>
+        </div>
+        <div class="body">
+          <div class="price">
+            <div class="amount">基本¥20,000</div>
+            <div><small>月額（１コマ50分×4回）１コマ¥5,000換算</small><br><small>入会金なし・教材費実費・オンライン</small></div>
+          </div>
+          <h3>取り扱い内容</h3>
+          <ul class="list" aria-label="指導内容">
+            <li>データサイエンスのための高校数学</li>
+            <li>データサイエンスのための線形代数・微積分</li>
+            <li>統計学入門</li>
+            <li>機械学習入門</li>
+            <li>AIエンジニアになるためのPython</li>
+            <li>生成AIアプリ開発（RAG、chatbot、その他作ってみたいものがあれば伴走します）</li>
+          </ul>
+          <div class="cta">
+            <a class="btn btn-primary" href="contact.html">受講相談をする</a>
+
+      </section>
+
+      <section id="dev" class="card" aria-labelledby="dev-title">
+        <div class="head">
+          <div class="eyebrow">For Schools <span class="pill">公教育 × AI</span></div>
+          <h2 id="dev-title">テスト採点の自動化システム開発（開発中）</h2>
+          <p class="lead">数々のAI-OCRや生成AIを使ったシステム開発してきた知見と、実際に公教育現場で採点業務を行った経験を活かした採点自動化システムを開発中です。</p>
+        </div>
+        <div class="body">
+          <ul class="list" aria-label="想定ユースケース">
+            <h3>想定の実装要件</h3>
+            <li>クラス名簿(excel)と模範解答(pdf)をアップロードし、問題数や問題文などを抽出</li>
+            <li>問題ごとに別解や採点基準などを追記</li>
+            <li>実施済みのテストをクラス全員分スキャンし、pdfとしてシステムにアップロード</li>
+            <li>OCRによる模範解答との一致確認と生成AIによる解答の妥当性確認を組み合わせた自動採点を実施</li>
+            <li>採点者がAI採点をチェックし、不備を修正</li>
+            <li>成績入力済みのクラス名簿と採点済みpdfを出力</li>
+          </ul>
+          <div class="cta">
+            <a class="btn btn-primary" href="contact.html">導入相談をする</a>
+          </div>
+        </div>
+      </section>
     </div>
-    <p class="tagline">公教育の課題解決を目指すフリーAIエンジニアの個人HP</p>
-  </header>
-  
+
+    <section id="faq" class="faq">
+      <h3>家庭教師に関するFAQ</h3>
+      <details>
+        <summary>▼申し込み〜開始までの流れは？</summary>
+        <div class="body">
+          <ol class="list">
+            <li>お問い合わせ（希望の進め方・曜日）</li>
+            <li>面談（30〜50分・無料）</li>
+            <li>カリキュラム提案と日程確定</li>
+            <li>初回レッスン開始（オンライン）</li>
+          </ol>
+        </div>
+      </details>
+      <details>
+        <summary>▼受講対象者は？</summary>
+        <div class="body">
+            対象は高校生、高専生、専門学生、大学生、社会人などです。
+            データサイエンティスト、AIエンジニアなどを目指す方を想定していますが、学校の補習や学び直し、資格試験対策などにも柔軟に対応しております。
+            ただし、資格試験や大学、大学院受験に特化した質をご提供できない場合があることをご了承ください。
+        </div>
+      </details>
+      <details>
+        <summary>▼指導内容や回数を柔軟に変更することは可能ですか</summary>
+        <div class="body">
+          可能です。例えば、今月だけ隔週にする、もしくは逆に週２にすることも可能です。その場合は1回50分¥5,000で受講料を計算します。<br>
+          また、今までpythonの基礎をやっていたが、機械学習入門と並行して行いたい、という進め方の変更も柔軟に対応できます。<br>
+          ご要望があれば気兼ねなくご相談ください。
+        </div>
+      </details>
+      <details>
+        <summary>▼受講料の支払いについて教えてください</summary>
+        <div class="body">
+          前月までに何回の指導を予定するか確認をし、希望回数×¥5,000で受講料の請求書を送付いたしますので、当月中にお支払いください。<br>
+          支払い方法は現在、銀行振込のみ対応しております。
+        </div>
+      </details>
+
+    </section>
+
+  </main>
+
 
   <footer>
-    <p>&copy; 2025 Ryuta Fujimoto</p>
+    <div class="container foot">
+      <div>© <span id="y"></span> fujimoffice</div>
+    </div>
   </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
+
+
